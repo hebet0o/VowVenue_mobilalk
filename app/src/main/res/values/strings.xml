@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">VowVenue</string>
+    <string name="welcome_text">Welcome to Vow Venue!</string>
+    <string name="small_welcome_text">Please log in, or register to continue to our booking section</string>
+    <string name="loginText">Login</string>
+    <string name="registerText">Register</string>
+    <string name="pwHint">Password</string>
+    <string name="emHint">Email</string>
 </resources>
