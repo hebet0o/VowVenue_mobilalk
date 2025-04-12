@@ -9,4 +9,6 @@
     <string name="nameHint">Name</string>
     <string name="pwAgainHint">Password again</string>
     <string name="backToLogin">Back to login page</string>
+    <string name="venueWelcome">Browse your dream venues here</string>
+    <string name="guestLogin">Login as Guest</string>
 </resources>

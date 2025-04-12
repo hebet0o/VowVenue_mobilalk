@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1066092448630",
+    "project_id": "vowvenue-314d7",
+    "storage_bucket": "vowvenue-314d7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066092448630:android:008deec4aaf6310b6fc857",
+        "android_client_info": {
+          "package_name": "com.example.vowvenue"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByncpGzFLt5eVkolMCtILRQSoJp2r4bD0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
