@@ -2,7 +2,7 @@
 
 **Fordítás-Futtatási hiba**, check for yourself (Elvileg nem kellene lennie, szépen fordul)
 
-**Firebase Authentikáció: **MainActivity.java 52. sor login method, illetve 75. sor guestLogin, RegisterActivity.java 64. sor firebaseReg method
+**Firebase Authentikáció:** MainActivity.java 52. sor login method, illetve 75. sor guestLogin, RegisterActivity.java 64. sor firebaseReg method
 
 **ConstraintLayout** és még egy másik layout típus használata: Activity_main.xml 2. sor (ConstraintLayout), Activity_register (LinearLayout)
 
