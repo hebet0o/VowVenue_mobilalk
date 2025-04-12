@@ -69,6 +69,10 @@ public class RegisterActivity extends AppCompatActivity {
 
         if(!pass.equals(passConfirm)){
             Log.e(LOG_TAG, "Nem egyezik a két jelszó");
+            Toast.makeText(RegisterActivity.this, "Passwords don't match", Toast.LENGTH_SHORT).show();
+        }
+        if (email.isEmpty() || pass.isEmpty() || passConfirm.isEmpty()  ||name.isEmpty() ){
+            Toast.makeText(RegisterActivity.this, "Fill all of the input fields!", Toast.LENGTH_SHORT).show();
         }
 
         mAuth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {

@@ -10,14 +10,15 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="259dp"
-        android:layout_height="368dp"
+        android:layout_width="315dp"
+        android:layout_height="190dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.328"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.611">
+        app:layout_constraintVertical_bias="0.488">
 
         <EditText
             android:id="@+id/editTextText"
@@ -55,26 +56,6 @@
             android:hint="@string/pwAgainHint"
             android:inputType="textPassword" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:textColor="#FFFFFF"
-            android:onClick="firebaseReg"
-            android:backgroundTint="#8A6146"
-            android:fontFamily="sans-serif-black"
-            android:text="@string/registerText" />
-
-        <Button
-            android:id="@+id/backToLogin"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:textColor="#FFFFFF"
-            android:backgroundTint="#493325"
-            android:fontFamily="sans-serif-light"
-            android:onClick="backToLogin"
-            android:text="@string/backToLogin" />
-
     </LinearLayout>
 
     <TextView
@@ -94,25 +75,57 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="121dp"
-        android:layout_marginBottom="40dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        android:layout_width="736dp"
+        android:layout_height="210dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/header" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="150dp"
-        android:layout_marginTop="28dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="739dp"
+        android:layout_height="216dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.162"
         app:srcCompat="@drawable/footer" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="23dp"
+        android:backgroundTint="#8A6146"
+        android:fontFamily="sans-serif-black"
+        android:onClick="firebaseReg"
+        android:text="@string/registerText"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/backToLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.566" />
+
+    <Button
+        android:id="@+id/backToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="78dp"
+        android:backgroundTint="#493325"
+        android:fontFamily="sans-serif-light"
+        android:onClick="backToLogin"
+        android:text="@string/backToLogin"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

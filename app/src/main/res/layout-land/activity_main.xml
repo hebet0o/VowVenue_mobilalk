@@ -32,7 +32,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.331" />
+        app:layout_constraintVertical_bias="0.084" />
 
     <TextView
         android:id="@+id/textView2"
@@ -50,7 +50,7 @@
         android:id="@+id/loginButton"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
+        android:layout_marginStart="184dp"
         android:layout_marginTop="36dp"
         android:backgroundTint="#8A6146"
         android:fontFamily="sans-serif-light"
@@ -60,7 +60,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.504" />
+        app:layout_constraintVertical_bias="0.519" />
 
     <Button
         android:id="@+id/registerButton"
@@ -73,7 +73,7 @@
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.358"
+        app:layout_constraintHorizontal_bias="0.213"
         app:layout_constraintStart_toEndOf="@+id/loginButton"
         app:layout_constraintTop_toTopOf="@+id/loginButton"
         app:layout_constraintVertical_bias="0.0" />
@@ -99,35 +99,31 @@
         android:id="@+id/editTextPassword"
         android:layout_width="249dp"
         android:layout_height="48dp"
-        android:layout_marginTop="144dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
         android:fontFamily="sans-serif-light"
         android:hint="@string/pwHint"
         android:inputType="textPassword"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/loginButton"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundImage"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress" />
 
     <EditText
         android:id="@+id/editTextEmailAddress"
         android:layout_width="247dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:fontFamily="sans-serif-light"
         android:hint="@string/emHint"
         android:inputType="textEmailAddress"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
-        app:layout_constraintEnd_toEndOf="@+id/editTextPassword"
-        app:layout_constraintStart_toStartOf="@+id/editTextPassword"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.985" />
+        app:layout_constraintEnd_toEndOf="@+id/backgroundImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

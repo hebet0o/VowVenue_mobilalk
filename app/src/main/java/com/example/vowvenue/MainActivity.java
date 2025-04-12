@@ -4,6 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -25,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
     EditText emailET;
     EditText passET;
 
+    Button loginBtn;
+    Button registerBtn;
+    Button guestLoginBtn;
     private FirebaseAuth mAuth;
 
     @Override
@@ -42,6 +48,18 @@ public class MainActivity extends AppCompatActivity {
         passET = findViewById(R.id.editTextPassword);
 
         mAuth = FirebaseAuth.getInstance();
+
+        loginBtn = findViewById(R.id.loginButton);
+        Animation fadeIn = AnimationUtils.loadAnimation(this, R.anim.fade_in);
+        loginBtn.startAnimation(fadeIn);
+
+        registerBtn = findViewById(R.id.registerButton);
+        registerBtn.startAnimation(fadeIn);
+
+        guestLoginBtn = findViewById(R.id.guestButton);
+        guestLoginBtn.startAnimation(fadeIn);
+
+
     }
 
     public void StartShopping(){
@@ -52,6 +70,10 @@ public class MainActivity extends AppCompatActivity {
     public void login(View view) {
         String printnameStr = emailET.getText().toString();
         String printpassStr = passET.getText().toString();
+
+        if (printnameStr.isEmpty() || printpassStr.isEmpty() ){
+            Toast.makeText(MainActivity.this, "Fill all of the input fields!", Toast.LENGTH_SHORT).show();
+        }
 
         mAuth.signInWithEmailAndPassword(printnameStr, printpassStr).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
@@ -69,13 +91,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void register(View view) {
-        Intent intent = new Intent(this, RegisterActivity.class);
-
-        startActivity(intent);
+        Intent inti = new Intent(this, RegisterActivity.class);
+        startActivity(inti);
     }
 
     public void guestLogin(View view) {
-        Intent intent = new Intent(this, VenueActivity.class);
-        startActivity(intent);
+        mAuth.signInAnonymously().addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if(task.isSuccessful()){
+                    Log.d(LOG_TAG, "User logged in Anonymously.");
+                    StartShopping();
+                } else{
+                    Log.d(LOG_TAG, "User can't be logged in Anonymously");
+                    Toast.makeText(MainActivity.this, "Something went wrong" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
 }
