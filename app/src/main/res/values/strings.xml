@@ -6,4 +6,7 @@
     <string name="registerText">Register</string>
     <string name="pwHint">Password</string>
     <string name="emHint">Email</string>
+    <string name="nameHint">Name</string>
+    <string name="pwAgainHint">Password again</string>
+    <string name="backToLogin">Back to login page</string>
 </resources>
