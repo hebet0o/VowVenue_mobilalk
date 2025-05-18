@@ -11,4 +11,11 @@
     <string name="backToLogin">Back to login page</string>
     <string name="venueWelcome">Browse your dream venues here</string>
     <string name="guestLogin">Login as Guest</string>
+    <string name="venueName">Name of the venue</string>
+    <string name="add_your_venue">Add your venue!</string>
+    <string name="venueAddress">Helyszín címe</string>
+    <string name="capacityText">Capacity</string>
+    <string name="mentesText">Save</string>
+    <string name="backText">Back</string>
+    <string name="logoutText">Logout</string>
 </resources>

@@ -63,8 +63,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void StartShopping(){
-        Intent inti = new Intent(this, VenueActivity.class);
-        startActivity(inti);
+        Intent intent = new Intent(MainActivity.this, VenueActivity.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.slide_in, R.anim.fade_in);
+
     }
 
     public void login(View view) {
