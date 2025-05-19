@@ -26,7 +26,7 @@ public class Venue {
         this.name = name;
     }
 
-    public String getCity() {
+    public String getLocation() {
         return city;
     }
 

@@ -18,4 +18,10 @@
     <string name="mentesText">Save</string>
     <string name="backText">Back</string>
     <string name="logoutText">Logout</string>
+    <string name="oneText">1</string>
+    <string name="twoText">2</string>
+    <string name="threeText">3</string>
+    <string name="queryText">Query1: Gyomaendrődi helyszínek, amelyek befogadóképessége 500 fő feletti – kapacitás szerint csökkenő sorrendben.</string>
+    <string name="queryText2">Query2: Gyomaendrődi helyszínek – kapacitás szerint növekvő sorrendben, legfeljebb 3 találat.</string>
+    <string name="queryText3">Query3: Olyan helyszínek, amelyek kapacitása kisebb, mint 800 – városnév szerint rendezve.</string>
 </resources>

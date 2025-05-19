@@ -47,7 +47,7 @@ public class AddVenueActivity extends AppCompatActivity {
                 return;
             }
 
-            Venue venue = new Venue(name, location, capacity);
+            Venue venue = new Venue(name, location, capacity, "");
             db.collection("venues")
                     .add(venue)
                     .addOnSuccessListener(documentReference -> {
